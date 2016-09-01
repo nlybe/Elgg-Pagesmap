@@ -6,7 +6,7 @@
     <category>bundled</category>
     <category>content</category>
     <category>Maps</category>
-    <description>Add location on Pages and show on Google Map</description>
+    <description>Add maps and location functionality for Elgg pages</description>
     <website>https://github.com/nlybe/</website>
     <copyright>(C) Nikos Lyberakis 2012 - 2016</copyright>
     <license>GNU General Public License version 2</license>
