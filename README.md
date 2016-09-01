@@ -1,8 +1,10 @@
-******* PagesMap Plugin *******
+* PagesMap Plugin *
 
 Elgg plugin for showing pages posts on a Google Map, offering multiple search options.
 
 This plugin requires the Maps API plugin (https://github.com/nlybe/Elgg-MapsAPI)
+
+Demo: http://nikos.lyberakis.gr/elgg/pages/map
 
 == Contents ==
 
