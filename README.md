@@ -11,7 +11,7 @@ Demo: http://nikos.lyberakis.gr/elgg/pages/map
 1. Features
 2. Installation
 
-== 1. Features ==
+###1. Features###
 
 - Option to redirect the standard pages menu item to map of pages
 - Option to display pages around current logged-in user's location
@@ -30,7 +30,7 @@ Demo: http://nikos.lyberakis.gr/elgg/pages/map
 - A new tab "Pages Map" added on Pages
 - Multiple configuration options about google maps
 
-== 2. Installation ==
+###2. Installation###
 
 Requires: Elgg 2.1 or higher
 
