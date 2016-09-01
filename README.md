@@ -1,4 +1,4 @@
-* PagesMap Plugin *
+*PagesMap Plugin*
 
 Elgg plugin for showing pages posts on a Google Map, offering multiple search options.
 
