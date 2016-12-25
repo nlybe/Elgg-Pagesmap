@@ -32,10 +32,10 @@ $options = array(
 );
 	
 // get variables
-$s_location = $_GET["l"];
-$s_radius = (int) $_GET["r"];
-$s_keyword = $_GET["q"];
-$showradius = $_GET["sr"];
+$s_location = get_input("l");
+$s_radius = (int) get_input("r");
+$s_keyword = get_input("q");
+$showradius = get_input("sr");
 
 if (($s_location && $s_radius) || $s_keyword) {
     if ($s_keyword) {

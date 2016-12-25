@@ -1,6 +1,10 @@
 CHANGE LOG
 
-2.5
+2.5.1	(Dec 2016)
+--------------------------------
+- Fixed: $_GET replaced by get_input()
+
+2.5 (Aug 2016)
 --------------------------------
 - Added compatibility with Elgg 2.1.x
 - Adde option to redirect core pages plugin menu item to maps

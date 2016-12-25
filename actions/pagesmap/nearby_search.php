@@ -50,7 +50,7 @@ if ($initial_load) {
         if (!$options['limit']) {
             $options['limit'] = amap_ma_get_initial_limit('pagesmap');
         }
-error_log($options['limit']);        
+        
         $title = elgg_echo('pagesmap:newest', array($options['limit']));
     }
     else if ($initial_load == 'location') {
