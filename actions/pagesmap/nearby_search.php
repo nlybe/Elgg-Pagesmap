@@ -43,7 +43,7 @@ $options = array(
     'count' => false
 );
 $options['metadata_name_value_pairs'][] = array('name' => 'location', 'value' => '', 'operand' => '!=');
-error_log('---->'.$initial_load);  
+
 if ($initial_load) {
     
     if ($initial_load == 'newest') {

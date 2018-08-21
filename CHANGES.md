@@ -1,5 +1,9 @@
 CHANGE LOG
 
+2.5.2	(Aug 2018)
+--------------------------------
+- The location_map input can load now custom zoom for map on page view/edit
+
 2.5.1	(Dec 2016)
 --------------------------------
 - Fixed: $_GET replaced by get_input()

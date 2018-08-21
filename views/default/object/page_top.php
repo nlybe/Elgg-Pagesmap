@@ -91,14 +91,14 @@ if (!elgg_in_context('widgets')) {
 }
 
 if ($full) {
-
-$body = elgg_view('output/location_map', array(
-    'entity' => $page,
-    'show_map' => true,
-    'map_width' => '99%',
-    'map_height' => '250px;',
-    'marker' => amap_ma_get_entity_icon($page),
-));
+    $body = elgg_view('output/location_map', array(
+        'entity' => $page,
+        'show_map' => true,
+        'map_width' => '99%',
+        'map_height' => '250px;',
+        'map_zoom' => $page->map_zoom,
+        'marker' => amap_ma_get_entity_icon($page),
+    ));
 
 	$body .= elgg_view('output/longtext', array('value' => $annotation->value));
 

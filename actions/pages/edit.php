@@ -101,19 +101,23 @@ if ($page->save()) {
 	// pagesmap extra code start
 	$location = get_input('location');
 	if ($location) {
-		$page->location = $location;
-		$page->save();
-		$latitude = get_input("latitude");
-		$longitude = get_input("longitude");
-		
-		if ($latitude && $longitude)	{
-			$ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api', $latitude, $longitude );
-		}
-		else
-			$ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api');
+                $page->location = $location;
+                $page->save();
+                $latitude = get_input("latitude");
+                $longitude = get_input("longitude");
+                $map_zoom = get_input("map_zoom");
+
+                if ($latitude && $longitude)	{
+                        $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api', $latitude, $longitude );
+                }
+                else {
+                        $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api');
+                }
+                $page->map_zoom = $map_zoom;
+                $page->save();
 	}
 	else {
-		$page->setLatLong('','');
+                $page->setLatLong('','');
 	}	
 	// pagesmap extra code end
         
