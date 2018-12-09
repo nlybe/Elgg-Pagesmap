@@ -8,7 +8,7 @@
     <category>Maps</category>
     <description>Add maps and location functionality for Elgg pages</description>
     <website>https://github.com/nlybe/</website>
-    <copyright>(C) Nikos Lyberakis 2012 - 2016</copyright>
+    <copyright>(C) Nikos Lyberakis 2012 - 2018</copyright>
     <license>GNU General Public License version 2</license>
     <requires>
         <type>elgg_release</type>
