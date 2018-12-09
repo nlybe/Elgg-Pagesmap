@@ -1,7 +1,7 @@
 PagesMap Plugin for Elgg
 ==========================
 
-![Elgg 2.1](https://img.shields.io/badge/Elgg-2.1-orange.svg?style=flat-square)
+![Elgg 2.3](https://img.shields.io/badge/Elgg-2.3-orange.svg?style=flat-square)
 
 Elgg plugin for showing pages posts on a Google Map, offering multiple search options.
 
