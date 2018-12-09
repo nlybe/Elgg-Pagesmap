@@ -97,6 +97,7 @@ if ($full) {
         'map_width' => '99%',
         'map_height' => '250px;',
         'map_zoom' => $page->map_zoom,
+        'map_center' => $page->map_center,
         'marker' => amap_ma_get_entity_icon($page),
     ));
 

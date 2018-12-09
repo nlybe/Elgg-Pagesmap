@@ -100,25 +100,30 @@ if ($page->save()) {
 
 	// pagesmap extra code start
 	$location = get_input('location');
-	if ($location) {
-                $page->location = $location;
-                $page->save();
-                $latitude = get_input("latitude");
-                $longitude = get_input("longitude");
-                $map_zoom = get_input("map_zoom");
+        $latitude = get_input("latitude");
+        $longitude = get_input("longitude");
+        if (!$location && isset($latitude) && isset($longitude)) {
+            $location = amap_ma_reverse_geocoding($latitude, $longitude);
+        }
+	if ($location || ($latitude && $longitude)) {
+            $page->location = $location;
+//            $page->save();
+            $map_zoom = get_input("map_zoom");
+            $map_center = get_input("map_center");
 
-                if ($latitude && $longitude)	{
-                        $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api', $latitude, $longitude );
-                }
-                else {
-                        $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api');
-                }
-                $page->map_zoom = $map_zoom;
-                $page->save();
+            if ($latitude && $longitude)	{
+                $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api', $latitude, $longitude );
+            }
+            else {
+                $ccc = amap_ma_save_object_coords($location, $page, 'amap_maps_api');
+            }
+            $page->map_zoom = $map_zoom;
+            $page->map_center = $map_center;
+            $page->save();
 	}
 	else {
-                $page->setLatLong('','');
-	}	
+            $page->setLatLong('','');
+    }	
 	// pagesmap extra code end
         
         

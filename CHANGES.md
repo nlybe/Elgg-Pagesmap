@@ -1,5 +1,9 @@
 CHANGE LOG
 
+2.5.3	(Dec 2018)
+--------------------------------
+- Improved the way that location is specified
+
 2.5.2	(Aug 2018)
 --------------------------------
 - The location_map input can load now custom zoom for map on page view/edit

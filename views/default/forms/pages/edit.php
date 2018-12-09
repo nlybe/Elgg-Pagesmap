@@ -75,6 +75,7 @@ foreach ($variables as $name => $type) {
             'name' => 'location_map',
             'value' => $vars['entity']->location,
             'entity' => $vars['entity'],
+            'hide_label' => false,
         ))."</div>";
     }
 // pagesmap extra code end  
